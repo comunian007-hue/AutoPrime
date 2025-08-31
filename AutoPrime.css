@@ -1,0 +1,333 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body { background: #0d0d0d; color: #f5f5f5; transition: 0.3s; }
+
+/* Header */
+header { background: #111; color: #fff; padding: 30px; text-align: center; box-shadow: 0 0 20px #ff6600; }
+header h1 { font-size: 3em; animation: neonPulse 2s infinite alternate; }
+header p { font-size: 1.2em; color: #ccc; }
+
+@keyframes neonPulse {
+  0% { text-shadow: 0 0 5px #ff6600, 0 0 20px #ff3300; }
+  100% { text-shadow: 0 0 20px #ff6600, 0 0 60px #ff3300; }
+}
+
+/* Navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* esquerda - meio - direita */
+  align-items: center;
+  padding: 15px 30px;
+  background: #000; /* fundo preto */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: start;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.nome-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600;
+}
+
+/* Menu no centro */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600;
+}
+
+/* Ícones à direita */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-self: end;
+}
+
+.social-icons a {
+  font-size: 1.6em;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 15px #ff3300, 0 0 25px #ff6600;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-self: end;
+}
+
+.social-icons a {
+  font-size: 1.8em;
+  transition: 0.3s;
+}
+
+/* WhatsApp - verde neon */
+.social-icons a[href*="wa.me"] {
+  color: #25D366; /* verde oficial do zap */
+  animation: neon-zap 1.5s infinite alternate;
+}
+
+@keyframes neon-zap {
+  from {
+    text-shadow: 0 0 5px #25D366, 0 0 10px #128C7E, 0 0 20px #25D366;
+  }
+  to {
+    text-shadow: 0 0 15px #25D366, 0 0 30px #128C7E, 0 0 45px #25D366;
+  }
+}
+
+/* Instagram - roxo/rosa neon */
+.social-icons a[href*="instagram.com"] {
+  color: #E1306C; /* rosa Instagram */
+  animation: neon-insta 1.5s infinite alternate;
+}
+
+@keyframes neon-insta {
+  from {
+    text-shadow: 0 0 5px #E1306C, 0 0 10px #833AB4, 0 0 20px #FD1D1D;
+  }
+  to {
+    text-shadow: 0 0 15px #E1306C, 0 0 30px #833AB4, 0 0 45px #FD1D1D;
+  }
+}
+
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 1.5em;
+  color: white;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 15px #ff3300, 0 0 25px #ff6600;
+}
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600;
+}
+
+
+/* Navegação */
+nav { display: flex; justify-content: center; gap: 25px; background: #000; padding: 15px; box-shadow: 0 0 15px #ff6600; }
+nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+nav a:hover { color: #ffcc00; text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffaa00; }
+
+/* Seções */
+section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+h2 { text-align: center; margin-bottom: 25px; text-shadow: 0 0 10px #ff6600; }
+
+/* Cards */
+.servicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.card { background: #1a1a1a; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(255,102,0,0.3); text-align: center; transition: 0.3s; }
+.card:hover { transform: scale(1.05); box-shadow: 0 0 20px #ff6600, 0 0 40px #ff3300; }
+
+/* Formulário */
+form { display: flex; flex-direction: column; gap: 15px; background: #1a1a1a; padding: 25px; border-radius: 15px; box-shadow: 0 0 15px rgba(255,102,0,0.3); }
+form input, form select, form textarea, form button { padding: 12px; border: none; border-radius: 8px; }
+form input, form select, form textarea { background: #111; color: white; border: 1px solid #444; }
+form input:focus, form select:focus, form textarea:focus { border: 1px solid #ff6600; box-shadow: 0 0 10px #ff6600; outline: none; }
+form button { background: #ff6600; color: white; cursor: pointer; font-weight: bold; transition: 0.3s; }
+form button:hover { background: #e65c00; box-shadow: 0 0 20px #ff6600, 0 0 40px #ff3300; }
+
+/* Depoimentos */
+.depoimentos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.depoimento { background: #1a1a1a; padding: 20px; border-left: 5px solid #ff6600; border-radius: 10px; box-shadow: 0 0 10px rgba(255,102,0,0.3); }
+
+/* Comparador Antes e Depois */
+.container-comparador { max-width: 800px; margin: auto; position: relative; }
+.img-comparador { position: relative; width: 100%; height: 450px; overflow: hidden; border-radius: 15px; box-shadow: 0 0 20px #ff6600; }
+.img-comparador img { width: 100%; height: 100%; object-fit: cover; }
+.img-overlay { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; }
+.img-overlay img { width: 100%; height: 100%; object-fit: cover; }
+.slider { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 80%; cursor: pointer; }
+
+/* Rodapé */
+footer { background: #000; color: #fff; text-align: center; padding: 20px; margin-top: 30px; box-shadow: 0 0 15px #ff6600; }
+footer a { font-size: 1.8em; margin: 0 12px; color: #fff; transition: 0.3s; }
+footer a:hover { color: #ff6600; text-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300; }
+
+/* Botão Modo Escuro */
+#darkModeBtn { position: fixed; top: 20px; right: 20px; padding: 10px; border: none; border-radius: 50%; cursor: pointer; background: #ff6600; color: #fff; font-weight: bold; box-shadow: 0 0 15px #ff6600; }
+#darkModeBtn:hover { box-shadow: 0 0 25px #ff6600, 0 0 45px #ff3300; }
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 { font-size: 2em; }
+  nav { flex-direction: column; }
+}
+footer .icon {
+  font-size: 2em;
+  margin: 0 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer .icon:hover {
+  color: #ff6600;
+  text-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300;
+}
+footer .icon {
+  font-size: 2em;
+  margin: 0 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer .icon:hover {
+  color: #ff6600;
+  text-shadow: 0 0 15px #ff6600, 0 0 30px #ff3300;
+}
+
+.contato {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: white;
+}
+
+.contato h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ff6600;
+  text-shadow: 0 0 15px #ff3300, 0 0 25px #ff6600;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.info-card {
+  background: linear-gradient(145deg, #111, #222);
+  border: 2px solid rgba(255, 102, 0, 0.6);
+  border-radius: 18px;
+  padding: 25px 30px;
+  width: 270px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card i {
+  font-size: 2.5em;
+  margin-bottom: 12px;
+  display: block;
+  color: #ff6600;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.info-card p {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.info-card a {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #ff6600, #ff3300);
+  box-shadow: 0 0 10px #ff6600;
+  transition: 0.3s;
+}
+
+.info-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff3300;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 102, 0, 0.9);
+}
+
+@keyframes pulse {
+  from { text-shadow: 0 0 8px #ff6600, 0 0 15px #ff3300; }
+  to { text-shadow: 0 0 20px #ff3300, 0 0 35px #ff6600; }
+}

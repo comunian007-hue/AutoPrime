@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPrime - Limpeza Automotiva</title>
+  <link rel="stylesheet" href="AutoPrime.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <!-- Logo à esquerda -->
+    <div class="logo-container">
+      <img src="C:\Users\comun\Downloads\ChatGPT Image 17 de ago. de 2025, 11_10_42.png" alt="Logo AutoPrime" class="logo">
+      <span class="nome-logo">AutoPrime</span>
+    </div>
+
+    <!-- Menu no meio -->
+    <ul class="menu">
+      <li><a href="#home">Início</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#antesdepois">Antes e Depois</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <!-- Ícones sociais na direita -->
+    <div class="social-icons">
+      <a href="https://wa.me/5553999388086" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/autoprime" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </nav>
+</header>
+
+
+  </nav>
+</header>
+
+  <header>
+    <h1>AutoPrime</h1>
+    <p>O brilho que seu carro merece!</p>
+  </header>
+ 
+
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>🚗 Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="card">
+        <h3>Lavagem Completa</h3>
+        <p>Interior e exterior com cera protetora.</p>
+        <span>R$ 89,90</span>
+      </div>
+      <div class="card">
+        <h3>Higienização Interna</h3>
+        <p>Limpeza profunda de bancos e estofados.</p>
+        <span>R$ 59,90</span>
+      </div>
+      <div class="card">
+        <h3>Serviço Básico</h3>
+        <p>Limpeza externa e interna completa para seu carro.</p>
+        <span>R$ 45,00</span>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Antes e Depois -->
+  <section id="antesdepois">
+    <h2>✨ Antes e Depois</h2>
+    <div class="container-comparador">
+      <div class="img-comparador">
+        <img src="https://i.ibb.co/0sZzF8S/carro-sujo.jpg" alt="Antes da limpeza">
+        <div class="img-overlay">
+          <img src="https://i.ibb.co/1zsM8Cw/carro-limpo.jpg" alt="Depois da limpeza">
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider">
+      </div>
+    </div>
+  </section>
+<!-- Segundo Comparador: Interior -->
+<section id="antesdepois-interior">
+  <h2>🛋️ Limpeza do Interior</h2>
+  <div class="container-comparador">
+    <div class="img-comparador">
+      <img src="https://i.ibb.co/Q9y5Z6X/interior-sujo.jpg" alt="Antes da limpeza do interior">
+      <div class="img-overlay">
+        <img src="https://i.ibb.co/8B9qDk0/interior-limpo.jpg" alt="Depois da limpeza do interior">
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider">
+    </div>
+  </div>
+</section>
+
+<!-- Terceiro Comparador: Rodas -->
+<section id="antesdepois-rodas">
+  <h2>🛞 Limpeza das Rodas</h2>
+  <div class="container-comparador">
+    <div class="img-comparador">
+      <img src="https://i.ibb.co/LdXLQW1/rodas-sujas.jpg" alt="Antes da limpeza das rodas">
+      <div class="img-overlay">
+        <img src="https://i.ibb.co/7Wp5H6F/rodas-limpas.jpg" alt="Depois da limpeza das rodas">
+      </div>
+      <input type="range" min="0" max="100" value="50" class="slider">
+    </div>
+  </div>
+</section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos">
+    <h2>⭐ Depoimentos</h2>
+    <div class="depoimentos">
+      <div class="depoimento">"Meu carro nunca esteve tão limpo, recomendo demais!" – João</div>
+      <div class="depoimento">"Atendimento excelente e serviço impecável." – Maria</div>
+      <div class="depoimento">"Vale cada centavo, meu carro parece novo!" – Ricardo</div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+<section id="contato" class="contato">
+  <h2>📍 Onde Estamos</h2>
+  <div class="info-container">
+
+    <!-- Endereço -->
+    <div class="info-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Nosso Endereço</h3>
+      <p>Rua Anita Botrel Sales, 195 - Campos Elíseos<br>Varginha - MG</p>
+      <a href="https://maps.app.goo.gl/QSFXssZQQLFBKij87" target="_blank">Ver no mapa</a>
+    </div>
+
+    <!-- Telefone / WhatsApp -->
+    <div class="info-card">
+      <i class="fab fa-whatsapp"></i>
+      <h3>Fale Conosco</h3>
+      <p>(53) 99938-8086</p>
+      <a href="https://wa.me/5553999388086" target="_blank">Enviar WhatsApp</a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="info-card">
+      <i class="fab fa-instagram"></i>
+      <h3>Siga a AutoPrime</h3>
+      <p>@AutoPrime</p>
+      <a href="https://www.instagram.com/auto_prime01/#" target="_blank">Ir para Instagram</a>
+    </div>
+
+    <!-- Proprietário -->
+    <div class="info-card">
+      <i class="fas fa-user"></i>
+      <h3>Responsáveis</h3>
+      <p>Gabriel Comunian Santos
+      
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="AutoPrime.js"></script>
+</body>
+</html>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-xh6w4Fz1C5zvwlq6K6T1XY4m7m+4ecA2Oi1nM0jz9a2kkU4+Dx0fEjg+17kXcD9pZMk1dH+8Zqj2uz+UpE3v0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
